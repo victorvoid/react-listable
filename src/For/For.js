@@ -8,7 +8,7 @@ const For = ({
   ...props
 }) => {
   return each.map((item, index) => (
-    <Render key={item} {...item} {...props} />
+    <Render key={index} {...item} {...props} />
   ))
 }
 
