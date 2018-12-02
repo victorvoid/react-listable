@@ -1,0 +1,52 @@
+{
+  "name": "react-listable",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "react",
+    "listable",
+    "list",
+    "react-listable"
+  ],
+  "main": "dist/index.js",
+  "repository": "https://github.com/victorvoid/react-listable.git",
+  "author": "Victor Igor",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "src/index.js",
+    "dist/index.js"
+  ],
+  "scripts": {
+    "start": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "styleguide:deploy": "gh-pages -d styleguide",
+    "build": "mkdir -p dist; babel src/index.js --out-file dist/index.js",
+    "test": "jest --coverage --coverageReporters=json"
+  },
+  "peerDependencies": {
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-styleguidist": "9.0.0-beta1",
+    "prop-types": "^15.6.2",
+    "ramda": "0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.26.0"
+  }
+}
