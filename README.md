@@ -43,7 +43,7 @@ npm install react-listable
 <Ul 
   className="list"
   each={state.users} 
-  itemActive={({ name }) => name === 'Maria 🙍'}
+  setActive={({ name }) => name === 'Maria 🙍'}
   render={
     ({ name, age }) => <p>{ name }, { age }</p>
   }/>
