@@ -27,7 +27,7 @@ Ul.propTypes = {
   each: PropTypes.array.isRequired,
   render: PropTypes.func.isRequired,
   loader: PropTypes.func,
-  itemActive: PropTypes.func
+  setActive: PropTypes.func
 }
 
 export default Listable(Ul)

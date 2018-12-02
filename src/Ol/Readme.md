@@ -71,3 +71,24 @@ initialState = {
     ({ name, age }) => <p>{ name }, { age }</p>
   }/>
 ```
+
+
+### Set active item (active class)
+
+
+```jsx 
+initialState = { 
+  users: [
+    { name: 'Victor 👴', age: 10 }, 
+    { name: 'Maria 🙍', age: 20 }
+  ] 
+};
+
+<Ol 
+  className="list"
+  each={state.users} 
+  setActive={({ name }) => name === 'Maria 🙍'}
+  render={
+    ({ name, age }) => <p>{ name }, { age }</p>
+  }/>
+```

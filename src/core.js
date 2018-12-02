@@ -5,10 +5,10 @@ const noop = () => null
 
 export const Listable = (Component) => ({
   loader: Loader,
-  itemActive = noop,
+  setActive = noop,
   ...props
 }) => {
-  const isActived = item => itemActive(item) ? 'active' : ''
+  const isActived = item => setActive(item) ? 'active' : ''
 
   if (!isNil(props.each)) {
     return <Component {...props} isActived={isActived} />

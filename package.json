@@ -1,6 +1,6 @@
 {
   "name": "react-listable",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A collection of react components that iterates over the each prop and renders the render prop.",
   "keywords": [
     "react",
