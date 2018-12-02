@@ -1,7 +1,9 @@
 # react-listable
 
-A collection of react component that iterates over the each prop and renders the render prop.
+A collection of react components that iterates over the each prop and renders the render prop.
 [Demo](https://victorvoid.me/react-listable)
+
+![](https://github.com/victorvoid/react-listable/blob/master/lib/overview.png)
 
 ## Overview
 
@@ -23,6 +25,41 @@ npm install react-listable
 ```
 
 ## Documentation
+
+### For
+
+```jsx 
+<For 
+  each={state.users} 
+  loader={() => <div>loading</div>}
+  render={
+    ({ name, age }) => <p>{ name }, { age }</p>
+  }/>
+```
+
+## Ul
+
+```jsx 
+<Ul 
+  className="list"
+  each={state.users} 
+  itemActive={({ name }) => name === 'Maria 🙍'}
+  render={
+    ({ name, age }) => <p>{ name }, { age }</p>
+  }/>
+```
+
+## Ol
+
+```jsx 
+<Ol 
+  className="list"
+  each={state.users} 
+  render={
+    ({ name, age }) => <p>{ name }, { age }</p>
+  }/>
+
+```
 
 See the full documentation and live examples at https://victorvoid.me/react-listable
 
