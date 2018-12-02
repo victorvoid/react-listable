@@ -3,7 +3,7 @@
 A collection of react components that iterates over the each prop and renders the render prop.
 [Demo](https://victorvoid.me/react-listable)
 
-![](https://github.com/victorvoid/react-listable/blob/master/lib/overview.png)
+![](https://github.com/victorvoid/react-listable/blob/master/lib/code-overview.png)
 
 ## Overview
 
