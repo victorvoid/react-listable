@@ -1,7 +1,7 @@
 {
   "name": "react-listable",
   "version": "1.0.0",
-  "description": "A collection of react component that iterates over the each prop and renders the render prop.",
+  "description": "A collection of react components that iterates over the each prop and renders the render prop.",
   "keywords": [
     "react",
     "listable",
@@ -14,14 +14,14 @@
   "license": "MIT",
   "private": false,
   "files": [
-    "src/index.js",
-    "dist/index.js"
+    "src/**/*.js",
+    "dist/"
   ],
   "scripts": {
     "start": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "styleguide:deploy": "gh-pages -d styleguide",
-    "build": "babel source -d dist",
+    "build": "babel src -d dist",
     "test": "jest --coverage --coverageReporters=json"
   },
   "peerDependencies": {
@@ -37,14 +37,16 @@
     "ramda": "0.25.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
+    "gh-pages": "^2.0.1",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.26.0"
