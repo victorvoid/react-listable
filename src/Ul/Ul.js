@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Listable } from '../core'
 
 const Ul = ({
@@ -20,6 +21,13 @@ const Ul = ({
       }
     </ul>
   )
+}
+
+Ul.propTypes = {
+  each: PropTypes.array.isRequired,
+  render: PropTypes.func.isRequired,
+  loader: PropTypes.func,
+  itemActive: PropTypes.func
 }
 
 export default Listable(Ul)

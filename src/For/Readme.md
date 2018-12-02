@@ -1,5 +1,3 @@
-React component that iterates over the each prop and renders the render prop.
-
 ### Basic
 
 ```jsx 

@@ -1,7 +1,7 @@
 {
   "name": "react-listable",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of react component that iterates over the each prop and renders the render prop.",
   "keywords": [
     "react",
     "listable",
@@ -21,7 +21,7 @@
     "start": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "styleguide:deploy": "gh-pages -d styleguide",
-    "build": "mkdir -p dist; babel src/index.js --out-file dist/index.js",
+    "build": "babel source -d dist",
     "test": "jest --coverage --coverageReporters=json"
   },
   "peerDependencies": {

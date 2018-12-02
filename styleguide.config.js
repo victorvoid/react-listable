@@ -1,5 +1,5 @@
 const path = require('path')
-const { version } = require('./package')
+const { styles, theme } = require('./styleguide.styles')
 
 module.exports = {
   title: 'react-listable',
@@ -13,20 +13,15 @@ module.exports = {
       ]
     }
   },
-  theme: {
-    color: {
-      link: '#f86c6f',
-      linkHover: '#e15356'
-    },
-
-    fontFamily: {
-      base: '"Roboto", sans-serif'
-    }
+  styles,
+  theme,
+  styleguideComponents: {
+    Logo: path.join(__dirname, 'lib/components/Logo')
   },
   sections: [
     {
       name: 'Introduction',
-      description: 'react-listable is a component that iterates over the each prop and renders the render prop.'
+      content: 'docs/introduction.md'
     },
     {
       name: 'Installation',
@@ -42,7 +37,6 @@ module.exports = {
   moduleAliases: {
     'react-listable': path.resolve(__dirname, 'src')
   },
-  version,
   webpackConfig: {
     module: {
       rules: [
