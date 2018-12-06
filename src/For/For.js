@@ -9,7 +9,7 @@ const For = ({
   ...props
 }) => {
   return each.map((item, index) => (
-    <Render key={index} index={index} isActive={isActived(item)} {...getItem(item)} {...props} />
+    <Render key={index} index={index} isActive={!!isActived(item)} {...getItem(item)} {...props} />
   ))
 }
 

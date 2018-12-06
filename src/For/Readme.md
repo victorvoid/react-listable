@@ -68,7 +68,7 @@ initialState = {
   loader={() => <div>loading</div>}
   setActive={({ name }) => name === 'Victor 😎'}
   render={
-    ({ name, age, isActive }) => <p>{ name }, { age } -> { isActive }</p>
+    ({ name, age, isActive }) => <p>{ name }, { age } -> { JSON.stringify(isActive) }</p>
   }/>
 
 ```
