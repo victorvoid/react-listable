@@ -24,7 +24,20 @@ initialState = {
 <Ol each={state.users} render={({ item }) => <p>{ item }</p>} />
 ```
 
+### Getting index
 
+```jsx 
+initialState = { 
+  users: [
+    { name: 'Victor 😎', age: 18 },
+    { name: 'Carlos 😎', age: 19 },
+    { name: 'Tesk 😎', age: 20 },
+    { name: 'Spike 😎', age: 21 }
+  ] 
+};
+
+<Ol each={state.users} render={({ index }) => <p>{ index }</p>} />
+```
 
 ### Adding Loader
 You can add a loader to a list `null/undefined`
