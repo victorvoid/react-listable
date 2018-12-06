@@ -16,7 +16,7 @@ const Ul = ({
           key={index}
           className={`list-item ${className || ''} ${isActived(item)}`}
           {...liProps}>
-          <Render key={item} isActived={isActived} index={index} {...getItem(item)} />
+          <Render key={item} isActive={isActived} index={index} {...getItem(item)} />
         </li>))
       }
     </ul>
