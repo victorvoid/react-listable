@@ -16,7 +16,7 @@ const Ol = ({
           key={index}
           className={`list-item ${className || ''} ${isActived(item)}`}
           {...liProps}>
-          <Render key={item} index={index} isActive={isActived} {...getItem(item)} />
+          <Render key={item} index={index} isActive={isActived(item)} {...getItem(item)} />
         </li>))
       }
     </ol>
