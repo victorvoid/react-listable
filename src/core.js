@@ -1,7 +1,16 @@
 import React from 'react'
-import isNil from 'ramda/src/isNil'
+
+const isNil = value => value === null || value == undefined
 
 const noop = () => null
+
+export const getItem = (item) => {
+  if(typeof(item) === 'object'){
+    return item
+  }
+
+  return { item }
+}
 
 export const Listable = (Component) => ({
   loader: Loader,

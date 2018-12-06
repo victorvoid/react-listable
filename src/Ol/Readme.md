@@ -14,6 +14,18 @@ initialState = {
 ```
 
 
+### No Objects
+
+```jsx 
+initialState = { 
+  users: ['Victor', 'Joao'] 
+};
+
+<Ol each={state.users} render={({ item }) => <p>{ item }</p>} />
+```
+
+
+
 ### Adding Loader
 You can add a loader to a list `null/undefined`
 

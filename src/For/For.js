@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Listable } from '../core'
+import { Listable, getItem } from '../core'
 
 const For = ({
   each,
@@ -9,7 +9,7 @@ const For = ({
   ...props
 }) => {
   return each.map((item, index) => (
-    <Render key={index} isActive={isActived(item)} {...item} {...props} />
+    <Render key={index} isActive={isActived(item)} {...getItem(item)} {...props} />
   ))
 }
 

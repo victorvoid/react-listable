@@ -30,11 +30,10 @@
     "react-dom": "*"
   },
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-styleguidist": "9.0.0-beta1",
-    "prop-types": "^15.6.2",
-    "ramda": "0.25.0"
+    "react-styleguidist": "9.0.0-beta1"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",

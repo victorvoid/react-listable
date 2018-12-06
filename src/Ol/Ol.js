@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Listable } from '../core'
+import { Listable, getItem } from '../core'
 
 const Ol = ({
   each,
@@ -16,7 +16,7 @@ const Ol = ({
           key={index}
           className={`list-item ${className || ''} ${isActived(item)}`}
           {...liProps}>
-          <Render key={item} {...item} />
+          <Render key={item} {...getItem(item)} />
         </li>))
       }
     </ol>
